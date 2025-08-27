@@ -1,7 +1,20 @@
+import Image from "next/image";
+import { Geist, Geist_Mono } from "next/font/google";
 import { useEffect, useState } from "react";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   const [getCourses, setGetCourses] = useState([]);
+  const [user, getUsers] = useState([]);
 
   useEffect(() => {
     async function fetchCourses() {
@@ -22,7 +35,10 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Courses en ligne disponibles</h1>
+      <div>
+        <form></form>
+      </div>
+      <h1 style={{ "font-weight": "600" }}>Courses en ligne disponibles</h1>
       {getCourses.map((data) => (
         <div>
           <h2>{data.title}</h2>
