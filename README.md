@@ -8,7 +8,7 @@
 
 - **skillup/** : dossier principal contenant l’application  
   - **Frontend (Next.js)** : interface utilisateur moderne et réactive  (ce repo)
-  - **Backend (Node.js)** : API permettant la gestion des utilisateurs, cours et réservations  (repo tiers)
+  - **Backend (Node.js)** : API permettant la gestion des utilisateurs, cours et réservations  [repo tiers](https://github.com/Shoto974/skillup-back)
 
 ---
 
